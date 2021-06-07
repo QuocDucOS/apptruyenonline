@@ -3,12 +3,69 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <RelativeLayout
         android:id="@+id/rll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="60dp"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/txttitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/khac" />
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="3"
+                    android:padding="10dp"
+                    android:text="Chàng cóc"
+                    android:textColor="#9C27B0"
+                    android:textSize="30dp">
+
+                </TextView>
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp">
+
+                    <TextView
+                        android:id="@+id/txtcontent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:text="Ngày xưa, ở dưới chân núi Hồng-lĩnh về phía Đông nam, có một xóm nhỏ gồm mấy gia đình đánh"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </ScrollView>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/backtoolbar"
@@ -21,58 +78,8 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/rll"
-            android:layout_marginTop="60dp"
-            tools:ignore="NotSibling">
-
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="350dp"
-                android:layout_height="250dp"
-                android:layout_below="@id/txttitle"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/khac" />
-
-            <TextView
-                android:id="@+id/txttitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="10dp"
-                android:maxLines="3"
-                android:padding="10dp"
-                android:text="Chàng cóc"
-                android:textColor="#9C27B0"
-                android:textSize="30dp">
-
-            </TextView>
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/img1"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="25dp">
-
-                <TextView
-                    android:id="@+id/txtcontent"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:padding="15dp"
-                    android:text="Ngày xưa, ở dưới chân núi Hồng-lĩnh về phía Đông nam, có một xóm nhỏ gồm mấy gia đình đánh"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-            </ScrollView>
-        </RelativeLayout>
-
 
     </RelativeLayout>
+
+
 </layout>

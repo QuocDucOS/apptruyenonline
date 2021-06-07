@@ -27,7 +27,7 @@ class ActivityContent : AppCompatActivity() {
         bindingcontent.txtcontent.setText(s)
         setSupportActionBar(bindingcontent.backtoolbar)
         bindingcontent.backtoolbar.setNavigationOnClickListener {
-            onBackPressed()
+           onBackPressed()
         }
     }
 
